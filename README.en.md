@@ -250,7 +250,7 @@ src/
 ├── nudge.ts        # M4: kernel pressure decision → injected advisory nudge
 ├── system-prompt.ts# M4: one-time ACP guidance section (keeps nudges short)
 ├── config.ts       # kernel config assembly (thresholds + coreOverrides)
-├── window.ts       # auto context-window detection (session projection first, LLM runtime probe fallback, default 128000)
+├── window.ts       # auto context-window detection (session projection first, LLM runtime probe fallback, default 128000) + output-reservation probe (defaultMaxTokens, subtracted in windowFor)
 └── commands.ts     # M4: /acp slash command
 ```
 
